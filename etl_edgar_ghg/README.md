@@ -21,7 +21,7 @@ This project addresses that need by developing a data pipeline that:
 </p>
 
 <ul>
-  <li>Extracts raw GHG emission data from EDGAR’s published spreadsheets (<a href="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/data/raw-data/EDGAR_2025_GHG_booklet_2025.xlsx" download>available here</a>).</li>
+  <li>Extracts raw GHG emission data from EDGAR’s published spreadsheets (<a href="https://github.com/agungkramawijaya/personal_project/raw/main/etl_edgar_ghg/data/raw-data/EDGAR_2025_GHG_booklet_2025.xlsx" download>available here</a>).</li>
   <li>Transforms the data into a normalized relational structure using <strong>Python</strong>.</li>
   <li>Loads the transformed datasets into a <strong>PostgreSQL</strong> database for scalable storage, querying, and analysis.</li>
 </ul>
@@ -129,7 +129,7 @@ The ETL process was designed in alignment with the findings from the initial dat
 </p>
 
 <ul>
-  <li><strong>Extraction</strong> — retrieves raw GHG emission data directly from EDGAR’s published spreadsheets. The modified spreadsheet can be found here: <a href="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/data/processed-data/EDGAR_2025_GHG_booklet_2025_processed.xlsx" download>Modified EDGAR Spreadsheet</a> </li>
+  <li><strong>Extraction</strong> — retrieves raw GHG emission data directly from EDGAR’s published spreadsheets. The modified spreadsheet can be found here: <a href="https://github.com/agungkramawijaya/personal_project/raw/main/etl_edgar_ghg/data/processed-data/EDGAR_2025_GHG_booklet_2025_processed.xlsx" download>Modified EDGAR Spreadsheet</a> </li>
   <li><strong>Transformation</strong> — restructures horizontal year-based data into a vertical format, normalizes field names, removes missing values, separates merged datasets, and aligns data types to match the SQL schema.</li>
   <li><strong>Load</strong> — inserts the cleaned and transformed datasets into the corresponding PostgreSQL tables to enable structured queries and analysis.</li>
 </ul>
