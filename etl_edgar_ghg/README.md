@@ -102,7 +102,7 @@ The entity relationship diagram (ERD) below illustrates the final database struc
 </p>
 
 <p align="center">
-  <img src="https://github.com/agungkramawijaya/personal_project/etl_edgar_ghg/blob/main/assets/erd-edgar-ghg.png" alt="ERD Diagram for Global GHG Emission Database" width="700">
+  <img src="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/assets/erd-edgar-ghg.png" alt="ERD Diagram for Global GHG Emission Database" width="700">
 </p>
 
 <p>
@@ -118,7 +118,7 @@ In summary, this data model captures:
 
 <p>
 Based on this new structure, all corresponding tables were created in <strong>PostgreSQL</strong> using <strong>DBeaver</strong>.  
-The table creation script can be found here: <a href="https://github.com/agungkramawijaya/personal_project/etl_edgar_ghg/blob/main/code/ghg-edgar-create-table.sql">[SQL Table Creation Script ↗]</a>
+The table creation script can be found here: <a href="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/code/ghg-edgar-create-table.sql">[SQL Table Creation Script ↗]</a>
 
 </p>
 
@@ -129,14 +129,14 @@ The ETL process was designed in alignment with the findings from the initial dat
 </p>
 
 <ul>
-  <li><strong>Extraction</strong> — retrieves raw GHG emission data directly from EDGAR’s published spreadsheets. The modified spreadsheet can be found here: <a href="https://github.com/agungkramawijaya/personal_project/etl_edgar_ghg/raw/main/data/processed-data/EDGAR_2025_GHG_booklet_2025_processed.xlsx" download>Modified EDGAR Spreadsheet</a> </li>
+  <li><strong>Extraction</strong> — retrieves raw GHG emission data directly from EDGAR’s published spreadsheets. The modified spreadsheet can be found here: <a href="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/data/processed-data/EDGAR_2025_GHG_booklet_2025_processed.xlsx" download>Modified EDGAR Spreadsheet</a> </li>
   <li><strong>Transformation</strong> — restructures horizontal year-based data into a vertical format, normalizes field names, removes missing values, separates merged datasets, and aligns data types to match the SQL schema.</li>
   <li><strong>Load</strong> — inserts the cleaned and transformed datasets into the corresponding PostgreSQL tables to enable structured queries and analysis.</li>
 </ul>
 
 <p>
 This ETL pipeline ensures that the data flow from the original EDGAR source to the final database is repeatable and reliable.  
-The complete Python script implementing the ETL process can be found here: <a href="https://github.com/agungkramawijaya/personal_project/etl_edgar_ghg/blob/main/code/ghg-edgar-etl.py" target="_blank">[ETL Python Script  ↗]</a>.
+The complete Python script implementing the ETL process can be found here: <a href="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/code/ghg-edgar-etl.py" target="_blank">[ETL Python Script  ↗]</a>.
 </p>
 
 
