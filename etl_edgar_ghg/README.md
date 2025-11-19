@@ -21,7 +21,7 @@ This project addresses that need by developing a data pipeline that:
 </p>
 
 <ul>
-  <li>Extracts raw GHG emission data from EDGAR’s published spreadsheets (<a href="https://github.com/agungkramawijaya/personal_project/etl_edgar_ghg/raw/main/data/raw-data/EDGAR_2025_GHG_booklet_2025.xlsx" download>available here</a>).</li>
+  <li>Extracts raw GHG emission data from EDGAR’s published spreadsheets (<a href="https://github.com/agungkramawijaya/personal_project/blob/main/etl_edgar_ghg/data/raw-data/EDGAR_2025_GHG_booklet_2025.xlsx" download>available here</a>).</li>
   <li>Transforms the data into a normalized relational structure using <strong>Python</strong>.</li>
   <li>Loads the transformed datasets into a <strong>PostgreSQL</strong> database for scalable storage, querying, and analysis.</li>
 </ul>
