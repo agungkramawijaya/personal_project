@@ -8,8 +8,7 @@ Here is a list of the projects currently contained in this repository:
 
 | Project Name | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **[ETL Edgar GHG](./etl_edgar_ghg/)** | An ETL pipeline processing global greenhouse gas emissions data from EDGAR into SQL database. | Python, Pandas, SQL |
-| **[Future Project](./)** | Placeholder for upcoming work. | SQL, PowerBI |
+| **[Global GHG Emissions Data Warehouse](./etl_edgar_ghg/)** | Build a complete ETL pipeline that extracts raw EDGAR emission spreadsheets, transforms them into a clean relational structure, and loads them into a PostgreSQL database — revealing how greenhouse gases evolve across countries, regions, and sectors worldwide | Python, Pandas, Sqlalchemy, SQL |
 
 ---
 
